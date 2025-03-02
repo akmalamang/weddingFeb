@@ -1,335 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>undangan pernikahan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="couldown/default.min.css" />
     <script src="couldown/simplyCountdown.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- boostrep icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
-        <main>
-            <h4>Kepada Bapak/Ibu/Saudara/i</h4>
-            <h1>Pria dan Wanita</h1>
-            <p>Akan Melangsungkan resepsi Pernikahan dalam:</p>
-            <div class="simply-countdown"></div>
-            <a href="#undangan" class="btn btn-lg mt-4" onclick="enableScrool()">Lihat Undangan</a>
-        </main>
+      <main>
+        <h4>Kepada <span class="nama-kondangan">Bapak/Ibu/Saudara/i,</span> di tempat</h4>
+        <h1 id="judulUndangan"></h1>
+        <p>Akan Melangsungkan resepsi Pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#undangan" class="btn btn-lg mt-4" onclick="enableScrool()">Lihat Undangan</a>
+      </main>
     </section>
 
     <nav id="undangan" class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">Dion</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dion</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dion</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="#home">Home</a>
-                        <a class="nav-link" href="#info">Info</a>
-                        <a class="nav-link" href="#story">Story</a>
-                        <a class="nav-link" href="#galery">Galerry</a>
-                        <a class="nav-link" href="#rsvp">Rsvp</a>
-                        <a class="nav-link" href="#gifts">Gifts</a>
-                    </div>
-                </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#galery">Galerry</a>
+              <a class="nav-link" href="#rsvp">Rsvp</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
 
-    <section id="home" class="home">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h2>Acara Pernikahan</h2>
-                    <h3>Diselenggarakan pada 23 Februari 2025 di Kandang Wangi RT.06/03, Kec. Wanadi Kab. Banjarnegara, Jawa Tengah</h3>
-                    <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu,Saudara/i,untuk hadir pada acara pernikaha kami.</p>
-                </div>
-            </div>
-            <div class="row couple">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-8 text-end">
-                            <h3>Dion Romdon</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, perspiciatis!</p>
-                            <p>
-                                Putra dari Bapak.Misroh <br /> dan <br /> Ibu Sartiyah
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <img src="img/pria.png" alt="" class="img-responsive rounded-circle" />
-                        </div>
-                    </div>
-                </div>
-                <span class="heart"><i class="bi bi-arrow-through-heart-fill"></i></span>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="img/woman.png" alt="maimunah" class="img-responsive rounded-circle" />
-                        </div>
-                        <div class="col-8">
-                            <h3>Vivian Nur Ngazizah</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, velit!</p>
-                            <p>
-                                Putri dari Bapak Sahrudin <br /> dan <br /> Ibu Saonah
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="home" class="home fade-in">
+      <div class="container fade-in">
+        <div class="row justify-content-center fade-in">
+          <div class="col-md-8 text-center fade-in">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 23 Februari 2025 di Kandang Wangi RT.06/03, Kec. Wanadi Kab. Banjarnegara, Jawa Tengah</h3>
+            <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu,Saudara/i,untuk hadir pada acara pernikaha kami.</p>
+          </div>
         </div>
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end fade-in">
+                <h3>Dion Romdon</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, perspiciatis!</p>
+                <p>
+                  Putra dari Bapak.Misroh <br />
+                  dan <br />
+                  Ibu Sartiyah
+                </p>
+              </div>
+              <div class="col-4">
+                <img src="img/pria.png" alt="" class="img-responsive rounded-circle fade-in" />
+              </div>
+            </div>
+          </div>
+          <span class="heart"><i class="bi bi-arrow-through-heart-fill fade-in"></i></span>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/woman.png" alt="maimunah" class="img-responsive rounded-circle fade-in" />
+              </div>
+              <div class="col-8 fade-in">
+                <h3>Vivian Nur Ngazizah</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, velit!</p>
+                <p>
+                  Putri dari Bapak Sahrudin <br />
+                  dan <br />
+                  Ibu Saonah
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="info" class="info">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-10 text-center">
-                    <h2>Informasi Acara</h2>
-                    <p class="alamat">
-                        Mempelai Wanita, Desa Kandang Wangi RT. 06 / 03 <br /> Kandang Wangi Kec. Wanadi Kab. Banjarnegara
-                    </p>
-                    <a href="https://maps.app.goo.gl/9EcxGcjyTDUKgN2H8" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk melihat lokasi</a>
-                    <p class="description">Diharapkan untuk tidak salah alamat dan tanggal, manakala tiba di tujuan namun tidak ada tanda tanda sedang dilangsungkan pernikahan, boleh jadi anda salah jadwal, atau salah tempat</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center mt-4">
-                <div class="col-md-5 col-10">
-                    <div class="card text-center text-bg-light mb-4">
-                        <div class="card-header">Tasyukuran Nikah</div>
-                        <div class="card-body">
-                            <div class="row justify-content-center">
-                                <div class="col-md-6">
-                                    <i class="bi bi-clock d-block"></i>
-                                    <span>Setelah Ba'da Isya - Selesai</span>
-                                </div>
-                                <div class="col-md-6">
-                                    <i class="bi bi-calendar d-block"></i>
-                                    <span class="day">21 - 22 Febuari 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer">Saat acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh profesi</div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-10">
-                    <div class="card text-center text-bg-light">
-                        <div class="card-header">Akad & Resepsi Nikah</div>
-                        <div class="card-body">
-                            <div class="row justify-content-center">
-                                <div class="col-md-6">
-                                    <i class="bi bi-clock d-block"></i>
-                                    <span>09.00 WIB s/d Selesai</span>
-                                </div>
-                                <div class="col-md-6">
-                                    <i class="bi bi-calendar d-block"></i>
-                                    <span class="day">Minggu, 23 Februari 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer">Saat acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh profesi</div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center fade-in">
+            <h2 class="">Informasi Acara</h2>
+            <p class="alamat fade-in">
+              Mempelai Wanita, Desa Kandang Wangi RT. 06 / 03 <br />
+              Kandang Wangi Kec. Wanadi Kab. Banjarnegara
+            </p>
+            <!-- <a href="https://maps.app.goo.gl/9EcxGcjyTDUKgN2H8" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk melihat lokasi</a> -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2952873603003!2d107.001895!3d-6.2247417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c1c6475de25%3A0x3857e1b08f8366d6!2sHARRIS%20Hotel%20%26%20Conventions%20Bekasi!5e0!3m2!1sid!2sid!4v1740495879520!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p class="description fade-in">Diharapkan untuk tidak salah alamat dan tanggal, manakala tiba di tujuan namun tidak ada tanda tanda sedang dilangsungkan pernikahan, boleh jadi anda salah jadwal, atau salah tempat</p>
+          </div>
         </div>
+
+        <div class="row justify-content-center mt-4 fade-in">
+          <div class="col-md-5 col-10 fade-in">
+            <div class="card text-center text-bg-light mb-4">
+              <div class="card-header fade-in">Tasyukuran Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center fade-in">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block fade-in"></i>
+                    <span>Setelah Ba'da Isya - Selesai</span>
+                  </div>
+                  <div class="col-md-6 fade-in">
+                    <i class="bi bi-calendar d-block fade-in"></i>
+                    <span class="day fade-in">21 - 22 Febuari 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer fade-in">Saat acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh profesi</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10 fade-in">
+            <div class="card text-center text-bg-light fade-in">
+              <div class="card-header fade-in">Akad & Resepsi Nikah</div>
+              <div class="card-body fade-in">
+                <div class="row justify-content-center fade-in">
+                  <div class="col-md-6 fade-in">
+                    <i class="bi bi-clock d-block fade-in"></i>
+                    <span>09.00 WIB s/d Selesai</span>
+                  </div>
+                  <div class="col-md-6 fade-in">
+                    <i class="bi bi-calendar d-block fade-in"></i>
+                    <span class="day fade-in">Minggu, 23 Februari 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer fade-in">Saat acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh profesi</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="story" class="story">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-10 text-center">
-                    <span>Bagaimana Cinta Kami Bersemi</span>
-                    <h2 class="judul-story">Cerita Kami</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quisquam impedit error harum.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image" style="background-image: url(./img/paris.jpg)">
-                                <img src="" alt="" />
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h3>Pertama Bertemu</h3>
-                                    <span>1 Januari 2025</span>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sed? Omnis, voluptates iure.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image" style="background-image: url(./img/jogja.jpg)">
-                                <img src="" alt="" />
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h3>Mulai Serius</h3>
-                                    <span>24 Juli 2026</span>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt animi rem numquam possimus eius fugiat distinctio nemo delectus.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image" style="background-image: url(./img/tunangan.jpg)">
-                                <img src="" alt="" />
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h3>Tunangan</h3>
-                                    <span> 12 November 2026</span>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sed? Omnis, voluptates iure.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <section id="story" class="story fade-in">
+      <div class="container fade-in">
+        <div class="row justify-content-center fade-in">
+          <div class="col-md-8 col-10 text-center fade-in">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2 class="judul-story fade-in">Cerita Kami</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quisquam impedit error harum.</p>
+          </div>
         </div>
+        <div class="row fade-in">
+          <div class="col fade-in">
+            <ul class="timeline fade-in">
+              <li>
+                <div class="timeline-image fade-in" style="background-image: url(./img/paris.jpg)">
+                  <img src="" alt="" />
+                </div>
+                <div class="timeline-panel fade-in">
+                  <div class="timeline-heading fade-in">
+                    <h3>Pertama Bertemu</h3>
+                    <span>1 Januari 2025</span>
+                  </div>
+                  <div class="timeline-body fade-in">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sed? Omnis, voluptates iure.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted fade-in">
+                <div class="timeline-image fade-in" style="background-image: url(./img/jogja.jpg)">
+                  <img src="" alt="" />
+                </div>
+                <div class="timeline-panel fade-in">
+                  <div class="timeline-heading fade-in">
+                    <h3>Mulai Serius</h3>
+                    <span>24 Juli 2026</span>
+                  </div>
+                  <div class="timeline-body fade-in">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt animi rem numquam possimus eius fugiat distinctio nemo delectus.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image fade-in" style="background-image: url(./img/tunangan.jpg)">
+                  <img src="" alt="" />
+                </div>
+                <div class="timeline-panel fade-in">
+                  <div class="timeline-heading fade-in">
+                    <h3>Tunangan</h3>
+                    <span> 12 November 2026</span>
+                  </div>
+                  <div class="timeline-body fade-in">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sed? Omnis, voluptates iure.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="galery" class="galery">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-10 text-center">
-                    <span>Memori Kisah Kami</span>
-                    <h2 class="judul-story">Galery Foto</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quisquam impedit error harum.</p>
-                </div>
-            </div>
-            <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-                <div class="col mt-3">
-                    <a href="img/galery/g-foto-1.png" data-toggle="lightbox" data-gallery="mygaleri" data-caption="foto-1">
-                        <img src="img/galery/thumbnail/thumbnail-1.png" alt="foto-1" class="img-fluid w-100 rounded" />
-                    </a>
-                </div>
-                <div class="col mt-3">
-                    <a href="img/galery/g-foto-2.png" data-toggle="lightbox" data-gallery="mygaleri" data-caption="foto-2">
-                        <img src="img/galery/thumbnail/thumbnail-2.png" alt="foto-2" class="img-fluid w-100 rounded" />
-                    </a>
-                </div>
-                <div class="col mt-3">
-                    <a href="img/galery/g-foto-3.png" data-toggle="lightbox" data-gallery="mygaleri" data-caption="foto-3">
-                        <img src="img/galery/thumbnail/thumbnail-3.png" alt="foto-3" class="img-fluid w-100 rounded" />
-                    </a>
-                </div>
-                <div class="col mt-3">
-                    <a href="img/galery/g-foto-4.png" data-toggle="lightbox" data-gallery="mygaleri" data-caption="foto-4">
-                        <img src="img/galery/thumbnail/thumbnail-4.png" alt="foto-4" class="img-fluid w-100 rounded" />
-                    </a>
-                </div>
-            </div>
+    <section id="galery" class="galery fade-in">
+      <div class="container fade-in">
+        <div class="row justify-content-center fade-in">
+          <div class="col-md-8 col-10 text-center fade-in">
+            <span>Memori Kisah Kami</span>
+            <h2 class="judul-story fade-in">Galery Foto</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quisquam impedit error harum.</p>
+          </div>
         </div>
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center fade-in">
+          <div class="col mt-3 fade-in">
+            <a href="img/galery/g-foto-1.png" data-toggle="lightbox" data-gallery="mygaleri" data-caption="foto-1">
+              <img src="img/galery/thumbnail/thumbnail-1.png" alt="foto-1" class="img-fluid w-100 rounded fade-in" />
+            </a>
+          </div>
+          <div class="col mt-3 fade-in">
+            <a href="img/galery/g-foto-2.png" data-toggle="lightbox" data-gallery="mygaleri" data-caption="foto-2">
+              <img src="img/galery/thumbnail/thumbnail-2.png" alt="foto-2" class="img-fluid w-100 rounded fade-in" />
+            </a>
+          </div>
+          <div class="col mt-3 fade-in">
+            <a href="img/galery/g-foto-3.png" data-toggle="lightbox" data-gallery="mygaleri" data-caption="foto-3">
+              <img src="img/galery/thumbnail/thumbnail-3.png" alt="foto-3" class="img-fluid w-100 rounded fade-in" />
+            </a>
+          </div>
+          <div class="col mt-3 fade-in">
+            <a href="img/galery/g-foto-4.png" data-toggle="lightbox" data-gallery="mygaleri" data-caption="foto-4">
+              <img src="img/galery/thumbnail/thumbnail-4.png" alt="foto-4" class="img-fluid w-100 rounded fade-in" />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="rsvp" class="rsvp">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-10 text-center">
-                    <h2 class="judul-story">Konfirmasi Kehadiran</h2>
-                    <p>isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
-                </div>
-            </div>
+    <section id="rsvp" class="rsvp fade-in">
+      <div class="container fade-in">
+        <div class="row justify-content-center fade-in">
+          <div class="col-md-8 col-10 text-center fade-in">
+            <h2 class="judul-story fade-in">Konfirmasi Kehadiran</h2>
+            <p>isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          </div>
         </div>
+
+        <form
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center fade-in"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbx7mwZQWZAXcbeMKfUPNkmD8I_AhrHd-LMwwfCR2eHk6Aug3G3KcW4E78v8n8OTn-mLjg/exec"
+          id="my-form"
+        >
+          <div class="col-12 fade-in">
+            <div class="mb-3 fade-in">
+              <label for="nama" class="form-label nama fade-in">Nama</label>
+              <input type="text" class="form-control fade-in" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12 fade-in">
+            <div class="mb-3 fade-in">
+              <label for="jumlah" class="form-label nama fade-in">Jumlah</label>
+              <input type="number" class="form-control fade-in" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1" />
+            </div>
+          </div>
+          <div class="col-12 fade-in">
+            <div class="mb-3 fade-in">
+              <label for="status" class="form-label nama fade-in">Konfirmasi</label>
+              <select name="status" id="status" class="form-select fade-in">
+                <option selected>Pilih salah satu</option>
+                <option value="hadir">hadir</option>
+                <option value="tidak hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 fade-in">
+            <button class="btn btn-primary bung-btn fade-in" type="submit">Kirim</button>
+          </div>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3 fade-in">
+            <div id="successToast" class="toast align-items-center text-bg-success border-0 fade-in" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body fade-in">Kehadiran berhasil dikirim!</div>
+                <button type="button" class="btn-close me-2 m-auto fade-in" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="row justify-content-center mt-5 fade-in">
+          <div class="col-md-5 fade-in">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement('script');
+                s.src = 'https://weddingam-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section id="gifts" class="gifts fade-in">
+      <div class="container fade-in">
+        <div class="row justify-content-center fade-in">
+          <div class="col-md-8 col-10 text-center fade-in">
+            <span>Ucapan Tanda Terima Kasih</span>
+            <h2 class="judul-story fade-in">Kirim Hadiah</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam, rem vero perspiciatis possimus sed hic temporibus nihil rerum veniam?</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center fade-in">
+          <div class="col-md-6 fade-in">
+            <li class="list-group-item mb-2 fade-in">
+              <div class="fw-bold fade-in">BCA</div>
+
+              1234543 - AKMAL MAULANA
+            </li>
+            <li class="list-group-item mb-2 fade-in">
+              <div class="fw-bold fade-in">MANDIRI</div>
+              2321212 - AKMAL MAULANA
+            </li>
+            <li class="list-group-item fade-in">
+              <div class="fw-bold fade-in">QRIS</div>
+              <img src="./img/qris-potong.png" alt="QRIS" class="img-thumbnail fade-in" width="150px" />
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2025 Akmal Wedding. All rights Reserved.</small>
+            <small class="block">Design by <a href="https://www.instagram.com/akmlamng/">@Akmal</a></small>
+            <ul class="mt-3">
+              <li>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/wedding.mp3" type="audio/mp3" />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="sound bi bi-disc"></i>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script>
-        simplyCountdown('.simply-countdown', {
-            year: 2025, // Target year (required)
-            month: 2, // Target month [1-12] (required)
-            day: 24, // Target day [1-31] (required)
-            hours: 8, // Target hour [0-23], default: 0
-            words: {
-                // Custom labels, with lambda for plurals
-                days: {
-                    root: 'hari',
-                    lambda: (root, n) => (n > 1 ? root + '' : root),
-                },
-                hours: {
-                    root: 'jam',
-                    lambda: (root, n) => (n > 1 ? root + '' : root),
-                },
-                minutes: {
-                    root: 'menit',
-                    lambda: (root, n) => (n > 1 ? root + '' : root),
-                },
-                seconds: {
-                    root: 'detik',
-                    lambda: (root, n) => (n > 1 ? root + '' : root),
-                },
-            },
-            onEnd: () => {}, // Callback when countdown ends
-            onStop: () => {}, // Callback when countdown is stopped
-            onResume: () => {}, // Callback when countdown is resumed
-            onUpdate: (params) => {}, // Callback when countdown is updated
-        });
+      simplyCountdown('.simply-countdown', {
+        year: 2025, // Target year (required)
+        month: 3, // Target month [1-12] (required)
+        day: 24, // Target day [1-31] (required)
+        hours: 8, // Target hour [0-23], default: 0
+        words: {
+          // Custom labels, with lambda for plurals
+          days: {
+            root: 'hari',
+            lambda: (root, n) => (n > 1 ? root + '' : root),
+          },
+          hours: {
+            root: 'jam',
+            lambda: (root, n) => (n > 1 ? root + '' : root),
+          },
+          minutes: {
+            root: 'menit',
+            lambda: (root, n) => (n > 1 ? root + '' : root),
+          },
+          seconds: {
+            root: 'detik',
+            lambda: (root, n) => (n > 1 ? root + '' : root),
+          },
+        },
+        onEnd: () => {}, // Callback when countdown ends
+        onStop: () => {}, // Callback when countdown is stopped
+        onResume: () => {}, // Callback when countdown is resumed
+        onUpdate: (params) => {}, // Callback when countdown is updated
+      });
     </script>
 
     <script>
-        const humberger = document.querySelector('.navbar-toggler');
-        const stickyTop = document.querySelector('.sticky-top');
-        const offCanvas = document.querySelector('.offcanvas');
+      const humberger = document.querySelector('.navbar-toggler');
+      const stickyTop = document.querySelector('.sticky-top');
+      const offCanvas = document.querySelector('.offcanvas');
 
-        humberger.addEventListener('click', () => {
-            stickyTop.style.overflow = 'visible';
-        });
+      humberger.addEventListener('click', () => {
+        stickyTop.style.overflow = 'visible';
+      });
 
-        offCanvas.addEventListener('hidden.bs.offcanvas', () => {
-            stickyTop.style.overflow = 'hidden';
-        });
+      offCanvas.addEventListener('hidden.bs.offcanvas', () => {
+        stickyTop.style.overflow = 'hidden';
+      });
     </script>
 
     <script>
-        const rootElement = document.querySelector(':root');
+      window.addEventListener('load', function () {
+        const form = document.getElementById('my-form');
+        const toast = new bootstrap.Toast(document.getElementById('successToast')); // Inisialisasi toast
 
-        function disableScroll() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
 
-            window.onscroll = function() {
-                window.scrollTo(scrollTop, scrollLeft);
-            };
-
-            rootElement.style.scrollBehavior = 'auto';
-        }
-
-        function enableScrool() {
-            window.onscroll = function() {};
-            rootElement.style.scrollBehavior = 'smooth';
-
-            localStorage.setItem('opened', 'true');
-        }
-
-        if (!localStorage.getItem('opened')) {
-            disableScroll();
-        }
-        disableScroll();
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+            .then((response) => response.text())
+            .then(() => {
+              toast.show(); // Tampilkan toast setelah submit sukses
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+              alert('Gagal mengirim kehadiran. Coba lagi!');
+            });
+        });
+      });
     </script>
-</body>
 
+    <script>
+      const rootElement = document.querySelector(':root');
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+      let isPlaying = false;
+      const song = document.querySelector('#song');
+      const bi = document.querySelector('.sound');
+
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScrool() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = 'smooth';
+        playAudio();
+
+        // localStorage.setItem('opened', 'true');
+      }
+
+      function playAudio() {
+        song.volume = 0.5;
+        audioIconWrapper.style.display = 'flex';
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.addEventListener('click', () => {
+        if (isPlaying) {
+          song.pause();
+
+          bi.classList.replace('bi-disc', 'bi-pause-circle');
+        } else {
+          song.play();
+          bi.classList.replace('bi-pause-circle', 'bi-disc');
+        }
+        isPlaying = !isPlaying;
+      });
+
+      // if (!localStorage.getItem('opened')) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara';
+
+      const namaContainer = document.querySelector('.hero h4 span');
+      namaContainer.textContent = `${pronoun} ${nama} `.replace(/,$/, ',');
+
+      const name = document.querySelector('#nama');
+
+      name.value = pronoun;
+    </script>
+    <script>
+      var typed = new Typed('#judulUndangan', {
+        strings: ['Pria dan Wanita'],
+        typeSpeed: 100,
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+              }
+            });
+          },
+          {
+            threshold: 0.2, // Elemen harus 20% terlihat sebelum animasi berjalan
+          }
+        );
+
+        fadeElements.forEach((el) => {
+          observer.observe(el);
+        });
+      });
+    </script>
+  </body>
 </html>

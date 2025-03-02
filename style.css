@@ -194,7 +194,8 @@ body {
 }
 
 .story span,
-.galery span {
+.galery span,
+.gifts span {
     text-transform: uppercase;
     font-size: 0.8re;
     letter-spacing: 1px;
@@ -204,7 +205,8 @@ body {
 
 .story p,
 .galery p,
-.rsvp p {
+.rsvp p,
+.gifts p {
     font-size: 1rem;
     font-weight: 300;
 }
@@ -307,7 +309,8 @@ body {
 }
 
 .galery h2,
-.rsvp h2 {
+.rsvp h2,
+.gifts h2 {
     color: var(--hijau-daun);
     font-family: 'Charm';
     font-size: 5rem;
@@ -315,7 +318,8 @@ body {
 }
 
 .galery,
-.rsvp {
+.rsvp,
+.gifts {
     padding-top: 10rem;
     padding-bottom: 8rem;
 }
@@ -334,6 +338,94 @@ body {
 
 .rsvp p {
     color: white;
+}
+
+.nama {
+    color: white;
+}
+
+.rsvp .btn.bung-btn {
+    background-color: #3e7b27;
+    margin-top: 20px !important;
+    border: 1px solid #3e7b27;
+    color: var(--kulit);
+}
+
+.rsvp .btn.bung-btn:hover {
+    background-color: var(--kulit);
+    margin-top: 20px !important;
+    border: 1px solid var(--kulit);
+    color: var(--hijau-sawah);
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--hijau);
+    color: var(--kulit);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--kulit);
+}
+
+footer ul li a {
+    transition: 0.3s;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.nama-kondangan {
+    text-transform: capitalize;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
