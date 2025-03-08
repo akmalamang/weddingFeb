@@ -435,6 +435,15 @@
       const humberger = document.querySelector('.navbar-toggler');
       const stickyTop = document.querySelector('.sticky-top');
       const offCanvas = document.querySelector('.offcanvas');
+      const linkNav = document.querySelectorAll('.nav-link');
+      const backDrop = document.querySelector('offcanvas-backdrop');
+
+      linkNav.forEach((a) => {
+        a.addEventListener('click', () => {
+          offCanvas.classList.remove('show');
+          backDrop.classList.remove('show');
+        });
+      });
 
       humberger.addEventListener('click', () => {
         stickyTop.style.overflow = 'visible';
